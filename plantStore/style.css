@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2fcee;
+}
+:root{
+    --btn-color: #004800;
+    --text-color: #3f4a3c;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 55px;
+    background-color: transparent;
+}
+.nav-bar a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.search-input{
+    background: url('img/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg') no-repeat 10px center;
+    padding-left: 40px;
+    background-size:25px;
+}
+.search-input::placeholder{
+    font-size: 16px;
+    color: #a3a3a3;
+}
+.nav-icons a{
+    margin-left: 20px;
+    color: var(--text-color);
+}
+.nav-icons span{
+    font-size: 30px;
+    cursor: pointer;
+}
