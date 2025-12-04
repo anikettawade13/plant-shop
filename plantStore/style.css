@@ -28,7 +28,7 @@ body {
   background-color: transparent;
 }
 
-.nav-bar a {
+a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: bold;
@@ -165,4 +165,31 @@ body {
   }
 }
 
+
+/* Categories Section */
+
+.category-card {
+  background: white;
+  border-radius: var(--btn-radius);
+  padding: 20px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+
+.category-card .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
 
