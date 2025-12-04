@@ -1,69 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <main class="container-fluid">
-        <header class="nav-bar  ">
-            <div>
-                <a href="#"><span>Logo</span></a>
-            </div>
-            <div>
-                
-                <nav class="listNav">
-                    
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+
+        <!-- Navbar -->
+        <header class="navbar navbar-expand-lg nav-bar">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">Logo</a>
+
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">cat1</a></li>
                                 <li><a class="dropdown-item" href="#">cat2</a></li>
-                                <li><a class="dropdown-item" href="#">cat2</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
-                </nav>
-            </div>
-            <div>
-                    <input type="search" class="form-control w-auto search-input" placeholder="Search Plant">
-            </div>
-            <div class="nav-icons d-flex gap-2">
-                <a href="#"><span class="material-symbols-outlined">shopping_bag_speed</span></a>
-                <a href=""><span class="material-symbols-outlined">account_circle</span></a>
-            </div>
 
-        </header>
+                    <!-- Search Input -->
+                    <form class="d-flex">
+                        <input class="form-control me-2 search-input" type="search" placeholder="Search Plant" />
+                    </form>
 
-        <div class="container d-flex align-items-center my-3  contentContainer">
-            <div class="row content1">
-                <div class="col ">
-                    <h2 class="headline ">Bring Fresh Grenery into Your Home</h2>
-                    <p class="subtext ">discover easy care plants,curated collection , and evrything</p>
-                    <p class="subtext ">your nedd to grow a thriving indoor and outdoor oasis</p>
-
-                    <div class="d-flex gap-3 mt-4">
-                        <button class="btn  primary-btn">Shop Plants</button>
-                        <button class="btn  secondary-btn">View collection</button>
+                    <!-- Icons -->
+                    <div class="nav-icons d-flex gap-2">
+                        <a href="#"><span class="material-symbols-outlined">shopping_bag_speed</span></a>
+                        <a href="#"></a><span class="material-symbols-outlined">account_circle</span></a>
                     </div>
                 </div>
-                <div class="col ms-2  d-flex justify-content-center">
-                    <div class="img-container">
-                        <img src="img/pexels-nietjuhart-796620.jpg" alt="plant image" class="img-fluid">
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="container my-5 contentContainer">
+            <div class="row align-items-center">
+            <!-- Text Column -->
+                <div class="col-12 col-md-6 text-col">
+                    <h2 class="headline">Bring Fresh Greenery into Your Home</h2>
+                    <p class="subtext">Discover easy-care plants, curated collections, and everything you need...</p>
+                    <p class="subtext">Grow a thriving indoor and outdoor oasis.</p>
+                    <div class="d-flex gap-3 mt-4 flex-wrap btn-group-custom">
+                        <button class="btn primary-btn">Shop Plants</button>
+                        <button class="btn secondary-btn">View Collection</button>
                     </div>
+                </div>
+
+            <!-- Image Column -->
+                <div class="col-12 col-md-6 img-col text-center">
+                    <img src="img/pexels-nietjuhart-796620.jpg" alt="plant image" class="img-fluid"/>
                 </div>
             </div>
         </div>
 
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
 </body>
 </html>
