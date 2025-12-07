@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main class="container-fluid">
+
+        <!-- Navbar -->
+        <header class="navbar navbar-expand-lg nav-bar">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand f-5" href="#">🌿GreenHub</a>
+
+                <!-- Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse nav-underline" id="mainNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item "><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">cat1</a></li>
+                                <li><a class="dropdown-item" href="#">cat2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+
+                    <!-- Search Input -->
+                    <form class="d-flex me-lg -3">
+                        <input class="form-control me-2 search-input" type="search" placeholder="Search Plant" />
+                    </form>
+
+                    <!-- Icons -->
+                    <div class="nav-icons d-flex gap-2 align-items-center">
+                        <a href="#"><span class="material-symbols-outlined">shopping_bag_speed</span></a>
+                        <a href="#"></a><span class="material-symbols-outlined">account_circle</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="container my-3 contentContainer">
+            <div class="row align-items-center g-4">
+            <!-- Text Column -->
+                <div class="col-12 col-md-6 text-col">
+                    <h2 class="headline">Bring Fresh Greenery into Your Home</h2>
+                    <p class="subtext">Discover easy-care plants, curated collections, and everything you need...</p>
+                    <p class="subtext">Grow a thriving indoor and outdoor oasis.</p>
+                    <div class=" mt-4 btn-group-custom">
+                        <button class="btn primary-btn">Shop Plants</button>
+                        <button class="btn secondary-btn">View Collection</button>
+                    </div>
+                </div>
+
+            <!-- Image Column -->
+                <div class="col-12 col-md-6 img-col text-center">
+                    <img src="img/pexels-nietjuhart-796620.jpg" alt="plant image" class="img-fluid"/>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Categories Section -->
+        <section class=" container category-section py-5">
+            <div class=" row row-cols-2 row-cols-md-3 row-cols-lg-6 g-4">
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">IN</div> -->
+                            <img src="img/indoor.jpg" alt="" class="img-fluid">
+                            <p>Indoor</p>
+                            <p>low light friendly picks</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">OUT</div> -->
+                            <img src="img/outdoor.jpg" alt="" class="img-fluid">
+                            <p>Outdoor</p>
+                            <p>patio and balcony -ready </p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">SU</div> -->
+                            <img src="img/pexels-nietjuhart-1445418.jpg" alt="" class="img-fluid">
+                            <p>Succulents</p>
+                            <p>drought- tolerant minis</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">HB</div> -->
+                            <img src="img/licensed-image.jpeg" alt="" class="img-fluid">
+                            <p>Herbs</p>
+                            <p>fresh kitchen flavors</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">FL</div> -->
+                            <img src="img/flower.jpg" alt="" class="img-fluid">
+                            <p>Flowering</p>
+                            <p>colorful seasonal blooms</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#">
+                        <div class="category-card h-100">
+                            <!-- <div class="icon">AC</div> -->
+                            <img src="img/collection-garden-equipment-meadow_23-2148028911.avif" alt="" class="img-fluid">
+                            <p>Accessories</p>
+                            <p>pots tools and soil</p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+<!-- Bootstrap JS -->
+<script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
